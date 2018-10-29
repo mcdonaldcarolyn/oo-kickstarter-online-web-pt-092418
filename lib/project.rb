@@ -6,6 +6,9 @@ attr_accessor :title, :add_backer, :backers
   end
 
   def add_backer(backer)
-   @backers << Backer
+   @backers << backer
+   for each do |title|
+    Backer.backed_project(project) << title
+   end
   end
 end
